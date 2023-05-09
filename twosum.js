@@ -19,9 +19,9 @@
 
 const nums = [1,2,3,4]
 
-const runningSum = nums => {
+const runningSum = arr => {
     let sum = 0
-    return nums.map(num => sum += num)
+    return arr.map(num => sum += num)
 }
 
 console.log(runningSum(nums));
