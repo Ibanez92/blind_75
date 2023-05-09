@@ -16,3 +16,12 @@
 
 // Input: nums = [3,1,2,10,1]
 // Output: [3,4,6,16,17]
+
+const nums = [1,2,3,4]
+
+const runningSum = nums => {
+    let sum = 0
+    return nums.map(num => sum += num)
+}
+
+console.log(runningSum(nums));
