@@ -32,3 +32,13 @@
 // The pivot index is 0.
 // Left sum = 0 (no elements to the left of index 0)
 // Right sum = nums[1] + nums[2] = 1 + -1 = 0
+
+const nums = [1,7,3,6,5,6]
+
+const findPivot = nums => {
+    let rightSum = 0;
+    let leftSum = 0;
+
+}
+
+findPivot(nums)
