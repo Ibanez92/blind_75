@@ -43,19 +43,28 @@ const findPivot = nums => {
     let rightSum = 0;
     let leftSum = 0;
 
+    // go through the array and add every value in the array and set it to the rightSum variable
     nums.forEach((v) => rightSum += v);
 
-    for (let i = 0; i <= nums.length - 1; i++) {
+    // loop through the nums array
+    for (let i = 0; i < nums.length; i++) {
+
+        // set curr variable to the current index value
         const curr = nums[i];
         
+        // substract the current index value from the rightSum
         rightSum -= curr
 
+        // if the leftSum if equal to the rightSum variable then return and console log that index value
         if(leftSum === rightSum) return console.log(i);
 
+        // if doesnt equal then add the current index value to the leftSum variable using string arithmatic
         leftSum += curr
     }
 
+    // return and console log -1 if we dont find a match in the for loop
     return console.log(-1);
 }
 
+// call findPivot function with nums array as the argument
 findPivot(nums)
