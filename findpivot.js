@@ -44,7 +44,14 @@ const findPivot = nums => {
     for (let i = 0; i <= nums.length - 1; i++) {
         const curr = nums[i];
         
+        rightSum -= curr
+
+        if(leftSum === rightSum) return console.log(i);
+
+        leftSum += curr
     }
+
+    return console.log(-1);
 }
 
 findPivot(nums)
