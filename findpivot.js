@@ -39,6 +39,8 @@ const findPivot = nums => {
     let rightSum = 0;
     let leftSum = 0;
 
+    nums.forEach((v) => rightSum += v);
+    console.log(rightSum);
 }
 
 findPivot(nums)
