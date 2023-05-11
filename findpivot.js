@@ -33,9 +33,13 @@
 // Left sum = 0 (no elements to the left of index 0)
 // Right sum = nums[1] + nums[2] = 1 + -1 = 0
 
+// input for findPivot function
 const nums = [1,7,3,6,5,6]
 
+// findPivot function
 const findPivot = nums => {
+
+    // variables to hold right and left side values
     let rightSum = 0;
     let leftSum = 0;
 
