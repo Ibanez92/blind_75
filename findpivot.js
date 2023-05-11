@@ -40,7 +40,11 @@ const findPivot = nums => {
     let leftSum = 0;
 
     nums.forEach((v) => rightSum += v);
-    console.log(rightSum);
+
+    for (let i = 0; i <= nums.length - 1; i++) {
+        const curr = nums[i];
+        
+    }
 }
 
 findPivot(nums)
