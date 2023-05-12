@@ -22,7 +22,7 @@
 s = "egg", t = "add"
 
 const isIsomorphic = (s, t) => {
-    console.log('check');
+    
 };
 
 isIsomorphic()
