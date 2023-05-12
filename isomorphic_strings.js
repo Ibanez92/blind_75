@@ -18,3 +18,11 @@
 
 // Input: s = "paper", t = "title"
 // Output: true
+
+s = "egg", t = "add"
+
+const isIsomorphic = (s, t) => {
+    console.log('check');
+};
+
+isIsomorphic()
