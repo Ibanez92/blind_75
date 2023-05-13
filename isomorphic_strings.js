@@ -19,10 +19,11 @@
 // Input: s = "paper", t = "title"
 // Output: true
 
+// Input for isIsomorphic function, s and t parameter
 s = "egg", t = "add"
 
 const isIsomorphic = (s, t) => {
-    
+
 };
 
 isIsomorphic()
