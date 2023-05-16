@@ -5,11 +5,13 @@ Blind 75 leetcode is a list of 75 most frequent asked leetcode questions which h
 ## Prefix Sum
 
 1.Running Sum of 1d Array
+
 2.Find Pivot Index
 
 ## String
 
 3.Isomorphic Strings
+
 4.Is Subsequence
 
 ## Linked List
