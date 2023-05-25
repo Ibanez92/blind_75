@@ -4,7 +4,6 @@
 
 // All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character, but a character may map to itself.
 
- 
 
 // Example 1:
 
@@ -23,27 +22,23 @@
 const s = "egg"
 const t = "add"
 
-const isIsomorphic = (s, t) => {
-
-    // Edge case: for different length of two strings...
-    if(s.length != t.length)
+const isIsomorphic = (s, t) => { // Edge case: for different length of two strings...
+    if (s.length != t.length) 
         return false;
+    
 
     const map = new Map()
-    const values  = []
-// b:b
-// a:a
+    const values = []
 
-    for(let i = 0;i < s.length;i++){
-        // console.log(s[i])
-        if(t[i] === map.get(s[i])){
+    for (let i = 0; i < s.length; i++) { // console.log(s[i])
+        if (t[i] === map.get(s[i])) {
             continue;
         }
-        if(map.get(s[i]) && t[i]!== map.get(s[i])){
+        if (map.get(s[i]) && t[i] !== map.get(s[i])) {
             return console.log(false);
         }
-        if (!map.get(s[i])){
-            if (values.includes(t[i])){
+        if (! map.get(s[i])) {
+            if (values.includes(t[i])) {
                 return console.log(false);
             }
             map.set(s[i], t[i])
@@ -53,8 +48,8 @@ const isIsomorphic = (s, t) => {
 
     }
 
-        return console.log(true);
-  
+    return console.log(true);
+
 };
 
 isIsomorphic(s, t)
