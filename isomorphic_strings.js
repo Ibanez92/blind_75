@@ -20,10 +20,41 @@
 // Output: true
 
 // Input for isIsomorphic function, s and t parameter
-s = "egg", t = "add"
+const s = "egg"
+const t = "add"
 
 const isIsomorphic = (s, t) => {
 
+    // Edge case: for different length of two strings...
+    if(s.length != t.length)
+        return false;
+
+    const map = new Map()
+    const values  = []
+// b:b
+// a:a
+
+    for(let i = 0;i < s.length;i++){
+        // console.log(s[i])
+        if(t[i] === map.get(s[i])){
+            continue;
+        }
+        if(map.get(s[i]) && t[i]!== map.get(s[i])){
+            return console.log(false);
+        }
+        if (!map.get(s[i])){
+            if (values.includes(t[i])){
+                return console.log(false);
+            }
+            map.set(s[i], t[i])
+            values.push(t[i])
+            continue;
+        }
+
+    }
+
+        return console.log(true);
+  
 };
 
-isIsomorphic()
+isIsomorphic(s, t)
