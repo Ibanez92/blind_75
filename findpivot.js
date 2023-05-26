@@ -8,7 +8,6 @@
 
 // Return the leftmost pivot index. If no such index exists, return -1.
 
- 
 
 // Example 1:
 
@@ -34,12 +33,17 @@
 // Right sum = nums[1] + nums[2] = 1 + -1 = 0
 
 // input for findPivot function
-const nums = [1,7,3,6,5,6]
+const nums = [
+    1,
+    7,
+    3,
+    6,
+    5,
+    6
+]
 
 // findPivot function
-const findPivot = nums => {
-
-    // variables to hold right and left side values
+const findPivot = nums => { // variables to hold right and left side values
     let rightSum = 0;
     let leftSum = 0;
 
@@ -47,16 +51,16 @@ const findPivot = nums => {
     nums.forEach((v) => rightSum += v);
 
     // loop through the nums array
-    for (let i = 0; i < nums.length; i++) {
-
-        // set curr variable to the current index value
+    for (let i = 0; i < nums.length; i++) { // set curr variable to the current index value
         const curr = nums[i];
-        
+
         // substract the current index value from the rightSum
         rightSum -= curr
 
         // if the leftSum if equal to the rightSum variable then return and console log that index value
-        if(leftSum === rightSum) return console.log(i);
+        if (leftSum === rightSum) 
+            return console.log(i);
+        
 
         // if doesnt equal then add the current index value to the leftSum variable using string arithmatic
         leftSum += curr
