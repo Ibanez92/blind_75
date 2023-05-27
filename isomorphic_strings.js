@@ -30,7 +30,7 @@ const isIsomorphic = (s, t) => { // Edge case: for different length of two strin
     const map = new Map()
     const values = []
 
-    for (let i = 0; i < s.length; i++) { // console.log(s[i])
+    for (let i = 0; i < s.length; i++) {
         if (t[i] === map.get(s[i])) {
             continue;
         }
